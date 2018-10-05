@@ -15,7 +15,7 @@ class Newsletter extends Component {
                     <div>
                         02 Jan 18
                     </div>
-                    <NewsletterArchive />
+                    <NewsletterArchive archive={this.props.archive} />
                 </div>
                 <div>
                     main content the lastest newsletter
@@ -26,7 +26,6 @@ class Newsletter extends Component {
 }
 
 function mapStateToProps(state) {
-    console.log(state.newsletter.archive)
     return { archive: state.newsletter.archive }
 }
 
