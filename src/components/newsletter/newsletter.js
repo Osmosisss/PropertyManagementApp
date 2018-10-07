@@ -10,14 +10,14 @@ class Newsletter extends Component {
     }
     render() {
         return (
-            <div>
-                <div>
-                    <div>
+            <div className="row">
+                <div className="col-md-3 row">
+                    <div style={{ width: '200px', height: '200px', backgroundColor: 'skyblue' }}>
                         02 Jan 18
                     </div>
                     <NewsletterArchive archive={this.props.archive} />
                 </div>
-                <div>
+                <div className="col-md-9">
                     main content the lastest newsletter
                 </div>
             </div>
