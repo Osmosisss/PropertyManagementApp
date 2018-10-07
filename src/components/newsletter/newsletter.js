@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import * as actions from '../../actions';
 import NewsletterArchive from './newsletter_archive';
+import NewsletterContent from './newlsetter_content';
 
 class Newsletter extends Component {
 
@@ -15,10 +16,11 @@ class Newsletter extends Component {
                     <div style={{ width: '200px', height: '200px', backgroundColor: 'skyblue' }}>
                         02 Jan 18
                     </div>
+
                     <NewsletterArchive archive={this.props.archive} />
                 </div>
                 <div className="col-md-9">
-                    main content the lastest newsletter
+                    <NewsletterContent latestItem={this.props.latestItem} />
                 </div>
             </div>
         );
@@ -26,7 +28,11 @@ class Newsletter extends Component {
 }
 
 function mapStateToProps(state) {
-    return { archive: state.newsletter.archive }
+    console.log(state.newsletter.latestItem)
+    return {
+        archive: state.newsletter.archive,
+        latestItem: state.newsletter.latestItem
+    }
 }
 
 export default connect(mapStateToProps, actions)(Newsletter);
