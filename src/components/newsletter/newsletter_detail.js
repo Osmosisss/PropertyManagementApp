@@ -8,10 +8,33 @@ class NewsletterDetail extends Component {
         this.props.fetchNewsletterById(this.props.match.params.id)
     }
 
+    renderFetchedItem() {
+        if (this.props.fetchedItem) {
+            return (
+                <div>
+                    <div>
+                        <img src={this.props.fetchedItem.imageUrl} />
+                        <h2>{this.props.fetchedItem.title}</h2>
+                    </div>
+                    <p>
+                        {this.props.fetchedItem.body}
+                    </p>
+                </div>
+            )
+        }
+    }
+
     render() {
         return (
-            <div>
-
+            <div className="row">
+                <div className="col-md-3 row">
+                    <div style={{ width: '200px', height: '200px', backgroundColor: 'skyblue' }}>
+                        02 Jan 18
+                    </div>
+                </div>
+                <div className="col-md-9">
+                    {this.renderFetchedItem()}
+                </div>
             </div>
         );
     }
