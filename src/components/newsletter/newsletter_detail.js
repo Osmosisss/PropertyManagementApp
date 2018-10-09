@@ -5,7 +5,7 @@ import * as actions from '../../actions';
 class NewsletterDetail extends Component {
 
     componentDidMount() {
-        this.props.fetchNewsletterById(this.props.match.params.id)
+        this.props.fetchNewsletterById(this.props.match.params._id)
     }
 
     renderFetchedItem() {
