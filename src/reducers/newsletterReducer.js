@@ -3,6 +3,12 @@ import {
     FETCH_NEWSLETTER_BY_ID
 } from "../actions/types";
 
+const INITIAL_STATE = {
+    archive: [],
+    latestItem: {},
+    fetchedItem: {}
+}
+
 export default function (state = {}, action) {
     switch (action.type) {
         case FETCH_NEWSLETTER_ARCHIVE:

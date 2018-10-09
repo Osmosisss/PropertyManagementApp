@@ -6,7 +6,6 @@ import {
 
 import axios from 'axios';
 import history from '../history';
-import rootReducer from '../reducers';
 
 const ROOT_URL = 'https://bottega-property-management.herokuapp.com';
 
