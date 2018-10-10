@@ -33,8 +33,8 @@ function main() {
             <Route path="/signup" component={Signup}></Route>
 
             <Route path="/newsletter" exact component={Newsletter}></Route>
-            <Route path="/newsletter/detail/:id" component={NewsletterDetail}></Route>
-            <Route path="/newsletter/edit/:id" component={EditNewsletter}></Route>
+            <Route path="/newsletter/detail/:_id" component={NewsletterDetail}></Route>
+            <Route path="/newsletter/edit/:_id" component={EditNewsletter}></Route>
 
           </Switch>
         </Header>
