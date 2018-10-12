@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import EditNewsletter from './newsletter_edit';
 import { Link } from 'react-router-dom'
 
 class NewsletterContent extends Component {
@@ -11,8 +10,12 @@ class NewsletterContent extends Component {
                     <div>
                         <img src={this.props.latestItem.imageUrl} />
                         <h2>{this.props.latestItem.title}</h2>
+
                         <Link to={`/newsletter/edit/${this.props.latestItem._id}`}>
                             <div>Edit</div>
+                        </Link>
+                        <Link to={`/newsletter/add`}>
+                            <div>Add</div>
                         </Link>
                     </div>
                     <p>
