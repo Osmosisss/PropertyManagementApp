@@ -4,7 +4,8 @@ import {
     FETCH_NEWSLETTER_BY_ID,
 
     SELECT_REQUEST_TYPE,
-    FETCH_SUPPORT_REQUESTS
+    FETCH_SUPPORT_REQUESTS,
+    FETCH_SUPPORT_REQUEST_BY_ID
 } from './types';
 
 import axios from 'axios';
@@ -102,4 +103,13 @@ export function fetchSupportRequests() {
                 })
             })
     }
+}
+
+export function fetchSupportRequestById(_id) {
+    return (
+        {
+            type: FETCH_SUPPORT_REQUEST_BY_ID,
+            payload: _id
+        }
+    )
 }
