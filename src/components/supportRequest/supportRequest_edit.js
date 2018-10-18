@@ -20,9 +20,9 @@ class EditSupportRequest extends Component {
     }
 
     handleFormSubmit({ title, body }) {
-        // this.props.saveSupportRequestById({ title, body }, this.props.match.params._id, () => {
-        //     this.props.history.push('/support-request')
-        // })
+        this.props.saveSupportRequestEdit({ title, body }, this.props.match.params._id, () => {
+            this.props.history.push('/support-request')
+        })
     }
 
     render() {
@@ -32,7 +32,7 @@ class EditSupportRequest extends Component {
             <form onSubmit={handleSubmit(this.handleFormSubmit.bind(this))}>
                 <Field name="title" component={this.renderInput} type="text" />
                 <Field name="body" component={this.renderInput} type="textarea" />
-                <img src={this.props.initialValues.imageUrl} alt="support request image atatchment" />
+                <img src={this.props.initialValues} alt="support request image atatchment" />
                 <Link to="/support-request"><div>Cancel</div></Link>
                 <button action="submit" className="btn btn-primary">Save</button>
             </form>
