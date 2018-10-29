@@ -10,7 +10,7 @@ form {
         transform: translateX(-64.5px);
         label {
             width: 129px;
-            color: #BA0000;
+            color: $color-red;
             font-size: 18px;
             font-weight: bold;
             line-height: 23px;
@@ -34,7 +34,7 @@ form {
         height: 40px;
         width: 216.16px;
         border-radius: 20px;
-        background-color: #BA0000;
+        background-color: $color-red;
         color: #ffffff;
         font-size: 22px;
         font-weight: 400;

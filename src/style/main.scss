@@ -1,7 +1,9 @@
+@import './variables';
 @import './header';
 @import './addHeaderBorder';
 @import './addTitle';
 @import './signin';
+@import './addHeaderNav';
 
 ul {
     margin: 0;
@@ -12,7 +14,7 @@ ul {
     width: 250px;
     height: 250px;
     margin: 25px;
-    border: 1px solid #BA0000;
+    border: 1px solid $color-red;
 }
 
 body {
