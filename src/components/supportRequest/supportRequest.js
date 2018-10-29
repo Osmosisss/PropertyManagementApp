@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
-import InfoBox from '../infoBox';
-import * as actions from '../../actions';
+
 import { connect } from 'react-redux'
+import { Link } from 'react-router-dom';
+
+import * as actions from '../../actions';
+
+import InfoBox from '../infoBox';
 import SupportRequestContent from './supportRequest_content';
 
-import { Link } from 'react-router-dom';
+import addHeaderNav from '../HOC/addHeaderNav';
 
 class SupportRequest extends Component {
 
@@ -39,5 +43,7 @@ class SupportRequest extends Component {
 function mapStateToProps(state) {
     return { state: state.SupportRequest }
 }
+
+SupportRequest = addHeaderNav(SupportRequest)
 
 export default connect(mapStateToProps, actions)(SupportRequest);
