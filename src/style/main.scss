@@ -6,17 +6,11 @@
 @import './addHeaderNav';
 @import './newsletter';
 @import './newsletter_content';
+@import './infoBox';
 
 ul {
     margin: 0;
     padding: 0;
-}
-
-.info-box {
-    width: 250px;
-    height: 250px;
-    margin: 25px;
-    border: 1px solid $color-red;
 }
 
 body {
