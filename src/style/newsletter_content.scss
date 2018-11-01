@@ -1,3 +1,12 @@
+.action {
+    height: 24px;
+    width: 74px;
+    border: 1px solid $color-grey-one;
+    border-radius: 16px;
+    text-align: center;
+    color: $color-grey-one;
+}
+
 .newsletter-content {
     height: 665px;
     width: 961px;
@@ -23,9 +32,6 @@
             text-align: center;
         }
 
-        span {
-
-        }
     }
 
     p {
