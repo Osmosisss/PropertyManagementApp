@@ -6,8 +6,8 @@ class NewsletterContent extends Component {
     renderItem() {
         if (this.props.latestItem) {
             return (
-                <div>
-                    <div>
+                <div className="newsletter-content">
+                    <div className="image-container">
                         <img src={this.props.latestItem.imageUrl} />
                         <h2>{this.props.latestItem.title}</h2>
 
