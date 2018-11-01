@@ -14,15 +14,15 @@ class Newsletter extends Component {
     }
     render() {
         return (
-            <div className="row">
-                <div className="col-md-3 row">
+            <div className="newsletter">
+                <div className="newsletter__side">
                     <div style={{ width: '200px', height: '200px', backgroundColor: 'skyblue' }}>
                         02 Jan 18
                     </div>
 
                     <NewsletterArchive archive={this.props.archive} />
                 </div>
-                <div className="col-md-9">
+                <div>
                     <NewsletterContent latestItem={this.props.latestItem} />
                 </div>
             </div>
