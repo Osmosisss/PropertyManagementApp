@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom';
 import * as actions from '../../actions';
 import { connect } from 'react-redux';
 
+import addHeaderBorder from '../HOC/addHeaderBorder';
+import addTitle from '../HOC/addTitle';
+
 class AddNewsletter extends Component {
 
     renderInput(field) {
@@ -41,5 +44,8 @@ AddNewsletter = reduxForm(
         form: "addNewsletter"
     }
 )(AddNewsletter);
+
+AddNewsletter = addTitle(AddNewsletter, 'New Newsletter');
+AddNewsletter = addHeaderBorder(AddNewsletter);
 
 export default connect(null, actions)(AddNewsletter);
