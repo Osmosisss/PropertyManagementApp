@@ -1,18 +1,42 @@
 .newsletter-archive {
+    margin-top: 38.5px;
     
     .archive__title {
-
+        color: $color-red;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 23px;
+        border-bottom: 1px solid #e6e6e6;
+        padding-bottom: 4px;
     }
 
     ul {
 
         .archive-item {
+            margin-top: 16px;
+
+            .archive-link-wrapper {
+                text-decoration: none;
+            }
 
             .archive-item__title {
+                color: $color-grey-one;
+                font-size: 14px;
+                line-height: 17px;
+                transition: all .2s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.2) translateX(10.5px);
+                    font-size: bold;
+                }
 
             }
 
-            .archive-item__date {
+            .archive-item__date {   
+                color: $color-red;
+                font-family: "Encode Sans Condensed";
+                font-size: 13px;
+                line-height: 16px;
 
             }
         }
