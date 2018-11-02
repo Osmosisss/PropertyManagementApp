@@ -13,7 +13,7 @@ class AddNewsletter extends Component {
         return (
             <div>
                 <label htmlFor={field.input.name}>{field.input.name}</label>
-                <input className="form-control" {...field.input} />
+                <input {...field.input} />
             </div>
         )
     }
@@ -33,7 +33,7 @@ class AddNewsletter extends Component {
                 <Field name="body" component={this.renderInput} type="textarea" />
 
                 <Link to="/newsletter"><div>Cancel</div></Link>
-                <button action="submit" className="btn btn-primary">Save</button>
+                <button action="submit">Save</button>
             </form>
         );
     }
