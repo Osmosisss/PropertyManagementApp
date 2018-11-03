@@ -1,5 +1,10 @@
+textarea {
+    min-height: 355px;
+    resize: none;
+}
+
 form {
-    width: 629px;
+    min-width: 629px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -15,7 +20,7 @@ form {
             font-weight: bold;
             line-height: 23px;
         }
-        input {
+        input, textarea {
             height: 40px;
             width: 500px;
             border: 1px solid #e6e6e6;
@@ -40,5 +45,26 @@ form {
         font-weight: 400;
         line-height: 28px;
         text-align: center;
+    }
+}
+
+.add-newsletter-form {
+    width: 100%;
+
+    .add-newsletter-form__title {
+        margin-top: 41px;
+    }
+    .add-newsletter-form__body {
+        margin-top: 20px;
+    }
+    div {
+        display: flex;
+        transform: translateX(-64.5px);
+        label {
+            width: 260px;;
+        }
+        input, textarea {
+            width: 760px;
+        }
     }
 }
