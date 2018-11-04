@@ -29,7 +29,7 @@ class Signin extends Component {
                     <Field name="password" component={this.renderInput} type="password" />
                 </div>
 
-                <button action="submit">Sign in</button>
+                <button className="signin-button" action="submit">Sign in</button>
             </form>
         );
     }
