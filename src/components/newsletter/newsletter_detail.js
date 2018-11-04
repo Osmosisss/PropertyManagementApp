@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../../actions';
 
+import addTitle from '../HOC/addTitle';
+import addHeaderBorder from '../HOC/addHeaderBorder';
+
 class NewsletterDetail extends Component {
 
     componentDidMount() {
@@ -45,5 +48,8 @@ function mapStateToProps(state) {
         fetchedItem: state.newsletter.fetchedItem
     }
 }
+
+NewsletterDetail = addTitle(NewsletterDetail, 'Newsletter Archive');
+NewsletterDetail = addHeaderBorder(NewsletterDetail);
 
 export default connect(mapStateToProps, actions)(NewsletterDetail);
