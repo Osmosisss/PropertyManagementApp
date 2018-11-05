@@ -11,11 +11,12 @@ class NewsletterDetail extends Component {
         this.props.fetchNewsletterById(this.props.match.params._id)
     }
 
+
     renderFetchedItem() {
         if (this.props.fetchedItem) {
             return (
-                <div>
-                    <div>
+                <div className="newsletter-content">
+                    <div className="image-container">
                         <img src={this.props.fetchedItem.imageUrl} />
                         <h2>{this.props.fetchedItem.title}</h2>
                     </div>
@@ -29,17 +30,21 @@ class NewsletterDetail extends Component {
 
     render() {
         return (
-            <div className="row">
-                <div className="col-md-3 row">
-                    <div style={{ width: '200px', height: '200px', backgroundColor: 'skyblue' }}>
-                        02 Jan 18
+            <div className="newsletter-detail">
+                <div className="info-box">
+                    <div className="info-box__text">
+                        22
+                    </div>
+                    <div className="info-box__sub-text">
+                        April 2020
                     </div>
                 </div>
-                <div className="col-md-9">
+
+                <div>
                     {this.renderFetchedItem()}
                 </div>
             </div>
-        );
+        )
     }
 }
 
@@ -48,6 +53,7 @@ function mapStateToProps(state) {
         fetchedItem: state.newsletter.fetchedItem
     }
 }
+
 
 NewsletterDetail = addTitle(NewsletterDetail, 'Newsletter Archive');
 NewsletterDetail = addHeaderBorder(NewsletterDetail);

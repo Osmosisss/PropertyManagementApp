@@ -27,19 +27,24 @@
     border: 1px solid #e6e6e6;
     border-radius: 5px;
 
-    .image-container {
-        position: relative;
+    .newsletter__side {
+        margin-right: 39px;
+    }
 
+    .image-container {
         img {
             border-radius: 5px 5px 0 0;
         }
+
+        position: relative;
 
         h2 {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            color: #ffffff;
+
+            color: #FFFFFF;
             font-size: 40px;
             font-weight: bold;
             line-height: 50px;

@@ -1,12 +1,14 @@
 .main-header {
     h1 {
-        color: #4d4d4d;
+        color: $color-grey-one;
+        font-family: "Encode Sans";
         font-size: 24px;
         font-weight: 500;
         line-height: 30px;
     }
     p {
         color: $color-red;
+        font-family: "Encode Sans Condensed";
         font-size: 16px;
         font-weight: 300;
         line-height: 20px;

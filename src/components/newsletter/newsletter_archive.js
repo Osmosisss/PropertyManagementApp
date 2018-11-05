@@ -17,7 +17,7 @@ class NewsletterArchive extends Component {
                         {item.title}
                     </div>
                 </Link>
-                <div className="archive-item__date">04/22/1997</div>
+                <div className="archive-item__date">04/22/2020</div>
             </li>
         )
     }
@@ -40,7 +40,7 @@ class NewsletterArchive extends Component {
                     }
                 </ul>
             </div>
-        );
+        )
     }
 }
 
