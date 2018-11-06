@@ -17,8 +17,10 @@ class NewsletterDetail extends Component {
             return (
                 <div className="newsletter-content">
                     <div className="image-container">
+
                         <img src={this.props.fetchedItem.imageUrl} />
                         <h2>{this.props.fetchedItem.title}</h2>
+
                     </div>
                     <p>
                         {this.props.fetchedItem.body}
